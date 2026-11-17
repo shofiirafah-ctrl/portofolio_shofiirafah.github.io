@@ -1,0 +1,174 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+    <meta charset="UTF-8">     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Portofolio Aku</title>   
+    <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <header> 
+        <nav>  
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#tentang">Tentang Saya</a></li>
+                <li><a href="#pendidikan">Pendidikan</a></li>
+                <li><a href="#keahlian">Keahlian</a></li>
+                <li><a href="#proyek">Proyek</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main> 
+        <section id="beranda">
+            <h1 class="judul-utama">Shofi Irafah</h1> 
+            <p id="sapaanWaktu"></p>     
+            <h2>Mahasiswa Pendidikan Ilmu Komputer</h2>
+            <p>Selamat datang di website portofolio saya</p>
+            <br>    
+                <button id="tombolCV" type="button"onclick="alert('CV saya belum tersedia.')">Unduh CV saya</button>
+            </a>
+        </section>
+
+        <hr>
+        
+        <section id="tentang">
+            <h2>Tentang Saya</h2>
+            <img src="profil1.jpeg" alt="Foto Profil Shofi" width="200">
+            <p>Halo! Nama saya <b>Shofi Irafah</b>,  mahasiswa Pendidikan Ilmu Komputer di Universitas Pendidikan Indonesia.</p>
+            <p>Saya tertarik mempelajari teknologi dan mengembangkan kemampuan di bidang pendidikan berbasis teknologi.</p>
+        </section>
+
+        <hr>
+
+        <section id="pendidikan">
+            <h2>Pendidikan</h2>
+            <table border="2">
+                <tr>
+                    <th>Tingkat</th>
+                    <th>Nama Instansi</th>
+                    <th>Tahun</th>
+                </tr>
+                <tr>
+                    <td>SMA</td>
+                    <td>MAN 2 Majalengka</td>
+                    <td>2022 - 2025</td>
+                </tr>
+                <tr>
+                    <td>S1</td>
+                    <td>Universitas Pendidikan Indonesia</td>
+                    <td>2025 - Sekarang</td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="keahlian">  
+            <h2>Keahlian</h2>
+            <p id="jumlahKeahlian"></p>
+            <p>Berikut adalah beberapa keahlian yang saya miliki dan kembangkan:</p>
+            <ul class="daftar-keahlian">
+                <li>HTML Dasar</li>
+                <li>CSS Dasar</li>
+                <li>JavaScript Dasar</li>
+                <li>Microsoft Word dan PowerPoint</li>
+                <li>Desain menggunakan Canva</li>
+                <li>Komunikasi</li>
+                <li>Pemecahan Masalah</li>
+                <li>Kerja Sama Tim</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="proyek"> 
+            <h2>Proyek</h2>
+            <p id="jumlahProyek"></p>
+            <p>Berikut proyek yang pernah saya kerjakan:</p>
+
+            <div class="daftar-proyek">
+                <div class="kartu-proyek">
+                    <h3>1. Program Toko Alat Tulis</h3>
+                    <p>Program yang dibuat sebagai tugas besar mata kuliah Algoritma dan Pemrograman.</p>
+                    <p><b>Teknologi:</b> Bahasa C</p>
+                </div>
+
+                <div class="kartu-proyek">
+                    <h3>2. Web Kalkulator Kalkulus</h3>
+                    <p>Website kalkulator sederhana yang dibuat untuk membantu melakukan perhitungan kalkulus.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        
+        <section id="kontak">
+            <h2>Kontak</h2>
+            <p>Silakan hubungi saya melalui kontak di bawah ini atau isi formulir yang sudah saya kerjakan.</p>
+
+            <p>Email: shofiirafah@student.upi.edu</p>
+            <p>WhatsApp: <a href="https://wa.me/6281573166194/"target="_blank">081573166194</a></p>
+            <br>
+
+            <h3>Kirim Pesan</h3>     
+            <form id="formKontak">
+                <p id="pesanForm"></p>
+                <p>
+                    <label for="nama">Nama Lengkap:</label><br>
+                    <input type="text" id="nama" name="nama">
+                </p>
+
+                <p>
+                    <label for="email">Alamat Email:</label><br>
+                    <input type="email" id="email" name="email">
+                </p>
+
+                <p>
+                    <label for="pesan">Pesan:</label><br>
+                    <textarea id="pesan" rows="4" cols="30"></textarea>
+                    <p id="jumlahKarakter">0 karakter</p>
+                </p>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+    
+    <hr>
+
+    <footer> 
+        <h3>Navigasi Cepat</h3>
+        <ul>     
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang Saya</a></li>
+            <li><a href="#pendidikan">Pendidikan</a></li>
+            <li><a href="#keahlian">Keahlian</a></li>
+            <li><a href="#proyek">Proyek</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+
+        <h3>Media Sosial</h3>
+        <div class="sosial-media">    
+        <a href="https://wa.me/6281573166194" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp</span>
+        </a>
+
+        <a href="https://www.instagram.com/shofiirafah/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span>
+        </a>
+        </div>
+
+    </footer>
+    <p id="teksHakCipta"></p> 
+
+    <script src="scriptmy.js"></script> 
+</body>
+</html>
